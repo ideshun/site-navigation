@@ -10,17 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: { // 设置代理
-      '/api': {
-        target: 'http://localhost:3000',  // 后台接口地址
-        ws: true,        // 如果要代理 websockets，配置这个参数
-        secure: false,  // 如果是https接口，需要配置这个参数
-        changeOrigin: true,  // 是否跨域
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    },
+proxyTable: { // 设置代理
+  '/api': {
+    target: 'http://localhost:3000',  // 后台接口地址
+    ws: true,        // 如果要代理 websockets，配置这个参数
+    secure: false,  // 如果是https接口，需要配置这个参数
+    changeOrigin: true,  // 是否跨域
+    pathRewrite: {
+      '^/api': ''
+    }
+  }
+},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
